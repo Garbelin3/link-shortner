@@ -4,13 +4,13 @@ Esta API permite encurtar links de maneira aleatória. Siga os passos abaixo par
 
 ## Passo a Passo
 
-1. **Inicie o servidor**
+**Inicie o servidor**
 
-   Execute o seguinte comando no terminal para iniciar o servidor:
+Execute o seguinte comando no terminal para iniciar o servidor:
 
    ```bash
    go run .
-
+   ```
 Envie uma requisição POST para o servidor, informando o link que deseja encurtar. Neste exemplo, utilizamos o comando curl para encurtar o link do Google:
    ```bash
    curl -X POST http://localhost:8080/api/shorten -d "{\"url\":\"https://www.google.com\"}"
